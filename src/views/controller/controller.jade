@@ -1,0 +1,41 @@
+.caption.bold Настройка среды
+.block
+    .caption Размер контейнера
+    .label Ширина (px)
+        input#widthContainer
+    .label Высота (px)
+        input#heightContainer
+    .text-right
+        button#setSize Установить
+.block
+    .caption Блоки
+    ul.list
+        li 240x260
+            .remove X
+        li 240x260
+            .remove X
+        li 240x260
+            .remove X
+        li 240x260
+            .remove X
+    .label Ширина (px)
+        input
+    .label Высота (px)
+        input
+    .text-right
+        button Добавить
+.block
+    .caption Сортировка
+    .label Алгиритм
+        select
+            option NFDH
+            option FFDH
+            option BFDH
+            option KP01
+            option SF
+            option JOIN
+            option FCNR
+            option Sleator
+            option Bruke
+    .text-right
+        button Сортировать

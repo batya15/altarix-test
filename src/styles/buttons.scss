@@ -1,0 +1,26 @@
+input {
+  border-width: 0;
+  outline: none;
+  margin-left: 10px;
+  height: 30px;
+  border-bottom: 1px solid #26a69a;
+}
+
+button {
+  border-width: 0;
+  background: #26a69a;
+  color: white;
+  height: 36px;
+  width: 120px;
+  outline: none;
+  display: inline-block;
+
+  &:hover {
+    background: #29c0b4;
+  }
+  &:active {
+    background: #26a69a;
+  }
+
+}
+

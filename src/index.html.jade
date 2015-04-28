@@ -2,18 +2,14 @@ doctype html
 html(lang="en")
     head
         meta(charset='UTF-8')
-        title= build + ' Главная страница'
+        title= 'Тестовое задание для Altarix'
         if (build == 'prod')
-            script(data-main="main" src="/main.js")
+            script(asinc, data-main="main" src="/main.js")
             link(rel='stylesheet', href='/styles.css')
         else
             script(data-main="main" src="/vendor/js/require.js")
             script(src="/require-config.js")
             link(rel='stylesheet', href='/vendor/css/normalize.css')
-            link(rel='stylesheet', href='/vendor/css/bootstrap.css')
             link(rel='stylesheet', href='/styles/main.css')
+            link(rel='stylesheet', href='/styles/buttons.css')
     body
-                Jade is a terse and simple
-                templating language with a
-                strong focus on performance
-                and powerful features.

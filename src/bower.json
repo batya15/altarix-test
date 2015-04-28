@@ -19,13 +19,9 @@
     "backbone": "~1.1.2",
     "require-css": "~0.1.8",
     "jade": "~1.8.1",
-    "bootstrap": "~3.3.4",
     "normalize.css": "~3.0.2"
   },
   "overrides": {
-    "socket.io-client": {
-      "main": "socket.io.js"
-    },
     "jade": {
       "main": "runtime.js"
     }

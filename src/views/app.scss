@@ -1,16 +1,35 @@
 .top {
-  background: red;
+  background: url('/img/logo.png') 0 center  no-repeat white;
+  box-shadow: 0 0 5px 5px #ccc;
   height: 100px;
+  line-height: 100px;
+  font-size: 24px;
+  text-align: right;
+  padding-right: 50px;
+  min-width: 920px;
 }
 
-.left {
-  background: green;
-  height: 300px;
-  float: left;
-  width: 100px;
+.content {
+  width: 920px;
+  background: white;
+  box-shadow: 0 0 5px 5px #ccc;
+  margin: 10px auto;
+  overflow: hidden;
+  height: 700px;
+
+  .controller{
+    padding: 5px;
+    max-height: 700px;
+    margin-left: 545px;
+  }
+
+  .area {
+    width: 550px;
+    float: left;
+    padding: 5px;
+    height: 100%;
+    overflow: auto;
+  }
+
 }
 
-.main {
-  background: #0000ff;
-  height: 300px;
-}

@@ -1,0 +1,58 @@
+.v-controller {
+    border-left: 1px solid #ccc;
+    height: 690px;
+
+  .caption {
+    text-align: center;
+    margin: 0 3px;
+  }
+
+  .block {
+    margin: 10px 0;
+    border-top: 1px solid #eee;
+    padding: 5px;
+  }
+
+  .label {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+
+    input {
+      float: right;
+      text-align: center;
+      width: 50px;
+    }
+  }
+
+  .list {
+    list-style: none;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    border: 1px solid #ddd;
+
+    li {
+      transition: background 0.3s;
+      padding: 2px 20px;
+      user-select: none;
+
+      &:hover {
+        background: #eee;
+      }
+
+      .remove {
+        color: red;
+        cursor: pointer;
+        float: right;
+      }
+
+    }
+  }
+
+  button {
+    margin-top: 5px;
+  }
+
+}

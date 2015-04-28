@@ -1,8 +1,8 @@
-define(['backbone', './app.jade', 'views/panel/Panel', 'views/SingleToneView/SingleToneView'],
+define(['backbone', './app.jade', 'views/area/area', 'views/controller/controller'],
     function(Backbone, template) {
 
-    var Panel = require('views/panel/Panel');
-    var SingleTone = require('views/SingleToneView/SingleToneView');
+    var Area = require('views/area/area');
+    var Controller = require('views/controller/controller');
 
     return Backbone.View.extend({
         el: 'body',
@@ -15,15 +15,18 @@ define(['backbone', './app.jade', 'views/panel/Panel', 'views/SingleToneView/Sin
         },
         render: function() {
             this.$el.html(template());
+            this.renderArea();
+            this.renderController();
         },
-        addView: function () {
-            var v = new Panel();
-            this.$('.main').append(v.$el);
+        renderArea: function () {
+            var v = new Area();
+            this.$('.area').append(v.$el);
             v.render();
         },
-        addSingle: function () {
-            var v = new SingleTone();
-            this.$('.main').append(v.$el);
+        renderController: function () {
+            var v = new Controller();
+            this.$('.controller').append(v.$el);
+            v.render();
         }
     });
 

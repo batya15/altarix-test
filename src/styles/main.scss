@@ -1,3 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans&subset=cyrillic,cyrillic-ext);
+
 body {
   background: #e1e1e1;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+}
+
+.clr {
+  clear: both;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
 }
